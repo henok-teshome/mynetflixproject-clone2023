@@ -1,4 +1,4 @@
-.row__poster {
+/* .row__poster {
     width: 100%;
     object-fit: contain;
     max-height: 100px;
@@ -26,4 +26,71 @@
 .row {
     margin-left: 20px;
     color: white;
+}
+
+/* Add new css */
+
+/* .row__arrows {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    color: blue;
+} */
+
+/* Row.css */
+.row {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.row__arrows {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.row__leftArrow,
+.row__rightArrow {
+    font-size: 24px;
+    cursor: pointer;
+    color: white;
+    background-color: darkseagreen;
+    border-radius: 50%;
+    padding: 10px;
+    margin: 0 10px;
+}
+
+.row__posters {
+    display: flex;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    padding: 20px;
+}
+
+.row__poster {
+    object-fit: contain;
+    max-height: 100px;
+    transition: transform 450ms;
+    margin-right: 10px;
+}
+
+.row__poster:hover {
+    transform: scale(1.08);
+}
+
+.row__posterLarge {
+    max-height: 250px;
+}
+
+.row__posterLarge:hover {
+    transform: scale(1.09);
+}
+
+.row {
+    margin-left: 20px;
+    color: white;
+}
+
+.row__posters::-webkit-scrollbar {
+    display: none;
 }
